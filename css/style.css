@@ -1,0 +1,216 @@
+:root {
+    --color-claro: #f7fff6;
+    --color-verde: #3A8966;
+    --color-verde-claro: #317a595b;
+    --color-oscuro: #124258;
+}
+
+body {
+    background-color: var(--color-verde-claro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.container_header {
+    width: 96%;
+    margin: .2rem auto;
+    background-color: var(--color-claro);
+    border-radius: 5px;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__titulo {
+    font-size: 50px;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-oscuro);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    color: var(--color-gris);    
+}
+
+.header__nav-link {
+    transition: transform .2s;
+}
+
+.header__nav-link:hover {
+    color: var(--color-verde);
+    transform: scale(1.1);
+}
+
+.formacion, .extras{
+    width: 96%;
+    margin: .2rem auto .5rem;
+    background-color: var(--color-claro);
+    border-radius: 5px;
+    padding-bottom: 2rem;
+}
+ 
+.info-tecnicas {
+    display: inline-flex;
+    margin: .2rem 2% .5rem 2%;
+    width: 96%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.informacion, .tecnicas {
+    flex-basis: 49.5%;
+    background-color: var(--color-claro);
+    border-radius: 5px;
+    padding-bottom: 2rem;    
+}
+
+.subtitulo {
+    color: var(--color-oscuro);
+    font-size: 25px;
+    font-weight:bold;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.tecnicas__tabla {
+    width: 75%;
+    margin: auto;
+}
+
+th, td {
+    width: 100%;
+    text-align: left;
+    padding: 0.1em;
+}
+
+th {
+    background-color: var(--color-verde-claro);
+    font-weight: bold;
+    color: var(--color-claro);
+}
+
+.formacion__h3 {
+    color: var(--color-oscuro);
+    font-size: 20px;
+    font-weight:bold;
+    padding: 3rem 0 .5rem 5rem;
+}
+
+.formacion__formal__lista, .formacion__cursos__lista, .formacion__idiomas__lista {
+    padding-left: 5rem;
+    line-height: 1.7rem;
+}
+
+.informacion__lista {
+    padding-left: 5rem;
+    line-height: 2rem;
+}
+
+.extras-div {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    align-items: stretch;
+}
+
+.extras__musica, .extras__reposteria {
+    flex-basis: 45%;
+    align-self: auto;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+.extras__h3 {
+    color: var(--color-oscuro);
+    font-size: 22px;
+    font-weight:bold;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.extras__musica-video {
+    box-shadow: 7px 7px 17px -3px rgba(0,0,0,0.3);
+    width: 100%;
+
+}
+
+.extras__musica-video:hover {
+   box-shadow: 7px 7px 17px -3px rgba(0,0,0,0.66);
+   transition: 0.2s;
+}
+
+.extras__musica-p {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.extras__reposteria-div {
+    display: flex;
+    align-self: auto;
+}
+
+.extras__reposteria-div2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+} 
+
+.reposteria__logo {
+    border-radius: 50%;
+    max-height: 180px;
+    margin: auto;
+    box-shadow: 7px 7px 17px -3px rgba(0,0,0,0.1);
+}
+
+a {
+    color: var(--color-verde);
+}
+
+a:hover {
+    transition: 0.1s;
+    text-decoration: underline;
+    color: var(--color-oscuro);
+}
+
+.informacion__item1 {
+    padding-left: 2.5rem;
+    background: url(/img/mail-svgrepo-com.svg) no-repeat;
+    background-size: 1.5rem;
+}
+
+.informacion__item2 {
+    padding-left: 2.5rem;
+    background: url(/img/pin-svgrepo-com.svg) no-repeat;
+    background-size: 1.5rem;
+}
+
+.informacion__item3 {
+    padding-left: 2.5rem;
+    background: url(/img/github-outline-fill-svgrepo-com.svg) no-repeat;
+    background-size: 1.5rem;
+
+}
+
+.informacion__item4 {
+    padding-left: 2.5rem;
+    background: url(/img/linkedin-svgrepo-com.svg) no-repeat ;
+    background-size: 1.5rem;
+}
+
+.reposteria__link {
+    padding-left: 1.5rem;
+    background: url(/img/instagram-svg.svg) no-repeat ;
+
+}
